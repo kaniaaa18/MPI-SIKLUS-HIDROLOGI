@@ -1,16 +1,37 @@
 *{
     font-family: initial;
 }
-body{
+
+body {
     background-image: url(photo/white-clouds-blue-background.jpg);
     background-size: cover;
     background-attachment: fixed;
-    
-
 }
 
-.navbar-brand,  .navbar-link {
-    text-size-adjust: 20px;
+.navbar {
+    background-color: transparent;
+    font-family: initial;
+    font-size: larger;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+.navbar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-link, .navbar-brand {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.navbar.btn:hover {
+    color: rgb(202, 202, 248);
 }
 
 .card {
@@ -29,7 +50,6 @@ body{
     height: 550px;
     overflow: hidden;
     overflow-y: scroll;
-
 }
 
 .nav-pills li a:hover {
