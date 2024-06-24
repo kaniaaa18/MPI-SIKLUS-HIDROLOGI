@@ -4,20 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Petunjuk</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .content-wrapper {
+      background-color: hsl(199, 51%, 84%);
+      border-radius: 15px;
+      padding: 80px;
+      margin: 100px;
+    }
+  </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">SiLo</a>
+      <img id="logo" src="photo/Si_Lo.svg" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +33,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#"><i class="bi bi-house-door"></i> Beranda</a>
+            <a class="nav-link" aria-current="page" href="halaman_utama.html"><i class="bi bi-house-door"></i> Beranda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="halaman_menu.html"><i class="bi bi-list"></i> Menu</a>
@@ -34,19 +42,128 @@
             <a class="nav-link" href="halaman_petunjuk.html"><i class="bi bi-info-circle"></i> Petunjuk Aplikasi</a>
           </li>
         </ul>
-        <button class="btn btn-outline-dark rounded-5" type="button"><i class="bi bi-volume-up-fill"></i></button>
+        <button id="mute" class="rounded-5"></button>
       </div>
     </div>
   </nav>
 
   <h1 class="m-5 text-center bg-light rounded-4">Petunjuk</h1>
-  <div class="container bg-light">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-      of Lorem Ipsum.</p>
+  <div class="container bg-light content-wrapper">
+    <h3 class="p-2">Petunjuk Penggunaan Aplikasi</h3>
+    <p>Aplikasi ini dirancang untuk membantu pengguna dalam memahami konsep siklus hidrologi. Berikut adalah beberapa petunjuk untuk memudahkan penggunaan aplikasi ini:</p>
+
+    <h4 class="p-2">1. Beranda</h4>
+    <p>Pengguna dapat mengklik tombol <strong>Beranda</strong> untuk kembali ke halaman utama aplikasi. Di halaman utama, pengguna akan menemukan informasi umum tentang aplikasi dan pengenalan singkat mengenai siklus hidrologi. Ini adalah tempat yang bagus untuk memulai eksplorasi.</p>
+    <img src="photo/utamaaa1.jpg" alt="Beranda" class="img-fluid rounded-4 mb-3">
+    <img src="photo/utamaaa2.jpg" alt="Beranda" class="img-fluid rounded-4 mb-3">
+    <h5 class="p-2">Detail:</h5>
+    <ol>
+      <li>(a). Mengarahkan pengguna ke halaman beranda, yaitu halaman utama.</li>
+      <li>(b). Mengarahkan pengguna ke halaman menu, yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi.</li>
+      <li>(c). Mengarahkan pengguna ke halaman petunjuk penggunaan aplikasi.</li>
+      <li>(d). Mengarahkan pengguna ke halaman menu, yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi.</li>
+      <li>(e). Sebagai tombol on or off music.</li>
+    </ol>
+
+    <h4 class="p-2">2. Menu</h4>
+    <p>Pada bagian <strong>Menu</strong>, pengguna akan diarahkan ke halaman yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi. Halaman ini menyediakan struktur yang jelas dan navigasi yang mudah untuk menemukan berbagai sumber daya yang disediakan dalam aplikasi ini.</p>
+    <img src="photo/menuuu.jpg" alt="Menu" class="img-fluid rounded-4 mb-3">
+    <h5 class="p-2">Detail:</h5>
+    <ol>
+      <li>(a). Mengarahkan pengguna ke halaman beranda, yaitu halaman utama.</li>
+      <li>(b). Mengarahkan pengguna ke halaman menu, yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi.</li>
+      <li>(c). Mengarahkan pengguna ke halaman petunjuk penggunaan aplikasi.</li>
+      <li>(d). Sebagai tombol on or off music.</li>
+      <li>(e). Mengarahkan pengguna ke halaman peta konsep.</li>
+      <li>(f). Mengarahkan pengguna ke halaman materi.</li>
+      <li>(g). Mengarahkan pengguna ke halaman evaluasi.</li>
+      <li>(h). Mengarahkan pengguna ke halaman referensi.</li>
+    </ol>
+
+    <h4 class="p-2">3. Materi</h4>
+    <p>Untuk mulai mempelajari materi, pengguna dapat mengklik tombol <strong>Materi</strong> pada menu. Tombol ini akan membawa pengguna ke halaman materi.</p>
+    <img src="photo/materiii.jpg" alt="Mulai Pelajari" class="img-fluid rounded-4 mb-3">
+    <h5 class="p-2">Detail:</h5>
+    <ol>
+      <li>(a). Mengarahkan pengguna ke halaman beranda, yaitu halaman utama.</li>
+      <li>(b). Mengarahkan pengguna ke halaman menu, yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi.</li>
+      <li>(c). Mengarahkan pengguna ke halaman petunjuk penggunaan aplikasi.</li>
+      <li>(d). Sebagai tombol on or off music.</li>
+      <li>(e). Mengarahkan pengguna ke halaman ayo menyimak yang berisi teks dan suara dari materi.</li>
+      <li>(f). Mengarahkan pengguna ke halaman ayo mengamati yang berisi video dari materi pembelajaran.</li>
+      <li>(g). Mengarahkan pengguna ke halaman ayo membuat yang berisi tentang cara-cara untuk membuat diorama siklus hidrologi.</li>
+    </ol>
+
+    <h4 class="p-2">4. Menyimak, Mengamati, dan Membuat</h4>
+    <p>Pengguna juga dapat menemukan fitur mengamati dan membuat yang membantu mereka dalam proses pembelajaran interaktif. Bagian ini memberikan panduan langkah demi langkah tentang bagaimana membuat model siklus hidrologi dan bagaimana mengamati proses-proses yang terjadi dalam siklus ini.</p>
+    <img src="photo/menyimakk.jpg" alt="Mengamati dan Membuat" class="img-fluid rounded-4 mb-3">
+    <img src="photo/mengamatiiiii.jpg" alt="Mengamati dan Membuat" class="img-fluid rounded-4 mb-3">
+    <img src="photo/membuattt.jpg" alt="Mengamati dan Membuat" class="img-fluid rounded-4 mb-3">
+    <h5 class="p-2">Detail:</h5>
+    <ol>
+      <li>(a). Mengarahkan pengguna ke halaman beranda, yaitu halaman utama.</li>
+      <li>(b). Mengarahkan pengguna ke halaman menu, yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi.</li>
+      <li>(c). Mengarahkan pengguna ke halaman petunjuk penggunaan aplikasi.</li>
+      <li>(d). Menampilkan petunjuk yang perlu diikuti pengguna.</li>
+    </ol>
+
+    <h4 class="p-2">5. Referensi</h4>
+    <p>Halaman referensi berisi <strong>sumber-sumber materi</strong> dari isi aplikasi ini.</p>
+    <img src="photo/referensii.jpg" alt="Mulai Pelajari" class="img-fluid rounded-4 mb-3">
+    <h5 class="p-2">Detail:</h5>
+    <ol>
+      <li>(a). Mengarahkan pengguna ke halaman beranda, yaitu halaman utama.</li>
+      <li>(b). Mengarahkan pengguna ke halaman menu, yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi.</li>
+      <li>(c). Mengarahkan pengguna ke halaman petunjuk penggunaan aplikasi.</li>
+      <li>(d). Sebagai tombol on or off music.</li>
+      <li>(e). Mengarahkan pengguna ke web W3Schools yang pertama, yaitu HTML Tutorials.</li>
+      <li>(f). Mengarahkan pengguna ke web W3Schools yang kedua, yaitu CSS Tutorials.</li>
+      <li>(g). Mengarahkan pengguna ke web W3Schools yang ketiga, yaitu JavaScript Tutorials.</li>
+      <li>(h). Mengarahkan pengguna ke web Bootstrap Tutorials.</li>
+    </ol>
+
+    <h4 class="p-2">6. Peta Konsep</h4>
+    <p>Halaman peta konsep berisi <strong>sumber-sumber materi</strong> dari isi aplikasi ini.</p>
+    <img src="photo/petakonsep.jpg" alt="Mulai Pelajari" class="img-fluid rounded-4 mb-3">
+    <h5 class="p-2">Detail:</h5>
+    <ol>
+      <li>(a). Mengarahkan pengguna ke halaman beranda, yaitu halaman utama.</li>
+      <li>(b). Mengarahkan pengguna ke halaman menu, yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi.</li>
+      <li>(c). Mengarahkan pengguna ke halaman petunjuk penggunaan aplikasi.</li>
+      <li>(d). Sebagai tombol on or off music.</li>
+    </ol>
+    <p>Halaman peta konsep ini menyajikan rangkuman sumber-sumber materi mengenai siklus hidrologi. Di dalam halaman ini, Anda akan menemukan penjelasan rinci dari berbagai sub bab yang mencakup semua aspek siklus hidrologi. Berikut adalah sub bab yang disertakan:</p>
+    <ol>
+      <li><strong>(e). Siklus Hidrologi</strong> - Pengenalan dan definisi dasar dari siklus hidrologi.</li>
+      <li><strong>(f). Tahapan Siklus Hidrologi</strong> - Uraian mengenai tahapan-tahapan yang dilalui air selama siklus hidrologi.</li>
+      <li><strong>(g). Proses-Proses Siklus Hidrologi</strong> - Penjelasan mengenai berbagai proses yang terjadi dalam siklus hidrologi.</li>
+      <li><strong>(h). Siklus Pendek</strong> - Deskripsi siklus hidrologi yang memiliki perjalanan air yang lebih singkat.</li>
+      <li><strong>(i). Siklus Sedang</strong> - Penjelasan mengenai siklus hidrologi dengan perjalanan air yang lebih kompleks dibandingkan siklus pendek.</li>
+      <li><strong>(j). Siklus Panjang</strong> - Uraian tentang siklus hidrologi dengan perjalanan air yang panjang dan melibatkan berbagai komponen ekosistem.</li>
+      <li><strong>(k). Evaporasi</strong> - Proses penguapan air dari permukaan bumi ke atmosfer.</li>
+      <li><strong>(l). Transpirasi</strong> - Proses penguapan air yang berasal dari tumbuhan.</li>
+      <li><strong>(m). Evapotranspirasi</strong> - Kombinasi dari evaporasi dan transpirasi, menggambarkan keseluruhan proses kehilangan air dari permukaan bumi dan tumbuhan.</li>
+      <li><strong>(n). Kondensasi</strong> - Proses perubahan uap air menjadi air cair di atmosfer, yang membentuk awan.</li>
+      <li><strong>(o). Presipitasi</strong> - Proses jatuhnya air dari atmosfer ke permukaan bumi dalam bentuk hujan, salju, atau bentuk lainnya.</li>
+      <li><strong>(p). Infiltrasi</strong> - Proses masuknya air ke dalam tanah dan menjadi bagian dari air tanah.</li>
+      <li><strong>(q). Run off</strong> - Aliran air di permukaan tanah yang menuju ke sungai, danau, atau laut.</li>
+    </ol>
+    <p>Halaman ini dirancang untuk membantu Anda memahami secara menyeluruh dan terstruktur mengenai siklus hidrologi dan proses-proses terkait. Setiap sub bab dilengkapi dengan penjelasan yang mudah dipahami dan dilengkapi dengan ilustrasi serta contoh-contoh yang relevan untuk mempermudah pemahaman Anda.</p>
+
+    <h4 class="p-2">7. Evaluasi</h4>
+    <p>Halaman ini berisi <strong>evaluasi</strong> untuk menguji pemahaman Anda terhadap materi yang telah dipelajari dalam aplikasi ini.</p>
+    <img src="photo/evaluasiii.jpg" alt="Mulai Pelajari" class="img-fluid rounded-4 mb-3">
+    <h5 class="p-2">Detail:</h5>
+    <ol>
+      <li>(a). Mengarahkan pengguna ke halaman beranda, yaitu halaman utama.</li>
+      <li>(b). Mengarahkan pengguna ke halaman menu, yang berisi peta konsep, materi pembelajaran, evaluasi, dan referensi.</li>
+      <li>(c). Mengarahkan pengguna ke halaman petunjuk penggunaan aplikasi.</li>
+      <li>(d). Sebagai tombol on or off music.</li>
+      <li>(e). Sebagai tombol untuk memunculkan petunjuk pengerjaan evaluasi.</li>
+      <li>(f). Mengarahkan pengguna ke soal sebelumnya.</li>
+      <li>(g). Mengarahkan pengguna ke soal selanjutnya.</li>
+      <li>(h). Mengarahkan pengguna untuk mensubmit evaluasi jika pengguna sudah selesai mengerjakan.</li>
+    </ol>
   </div>
 </body>
 
